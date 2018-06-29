@@ -1,4 +1,5 @@
-my_data<-read.csv("/Users/jleibowitz/Desktop/APOEKO.csv",sep=",",na.strings=c("","NA"))
+setwd("/users/jleibowitz/Dropbox (Partners Healthcare)/Oleg and Jeff/6 - Monocytes-->microglia in EAE")
+my_data<-read.csv("ANOVA.csv",sep=",",na.strings=c("","NA"))
 colnames(my_data)[1]<-"Groups"
 Gene_names<-colnames(my_data)
 Gene_names<-Gene_names[-1]
